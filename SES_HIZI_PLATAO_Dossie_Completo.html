@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#8f1018">
+<meta name="description" content="Dossiê ficcional de True!Frost! — SES HIZI PLATÃO, Acedia, Dez Portões de Transcendência, Desmond Spaghetti, Gabby Armor e regras quânticas simultâneas.">
+<title>SES HIZI PLATÃO — TRUE!FROST! | ARQUIVO SCP</title>
+<style>
+:root{
+  --red:#a3131d;--red-dark:#650b12;--red-soft:#d83a43;--paper:#f4f1ed;
+  --paper-2:#e8e3dd;--ink:#171719;--muted:#686368;--line:#c9c0ba;
+  --panel:#fffdfa;--black:#111114;--white:#fff;--alert:#8c1018;
+  --shadow:0 12px 34px rgba(30,12,14,.09);--radius:3px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:20px}
+body{background:var(--paper);color:var(--ink);font:15px/1.72 Arial,Helvetica,sans-serif}
+a{color:var(--red-dark);text-decoration:none}
+a:hover{text-decoration:underline}
+.topline{height:8px;background:var(--red)}
+header{background:var(--black);color:var(--white);padding:38px max(22px,calc((100% - 1240px)/2)) 34px;border-bottom:7px solid var(--red);position:relative;overflow:hidden}
+header:after{content:"";position:absolute;right:-70px;top:-130px;width:390px;height:390px;border:34px solid rgba(255,255,255,.045);transform:rotate(45deg);pointer-events:none}
+.kicker{font:700 11px/1.5 'Courier New',monospace;letter-spacing:.2em;text-transform:uppercase;color:#ffb7ba}
+h1{font:900 clamp(2rem,5vw,4.2rem)/1.02 Arial,sans-serif;letter-spacing:-.045em;margin:13px 0 15px;text-transform:uppercase;max-width:950px}
+.subtitle{max-width:920px;color:#e8e3e3;font-size:1.02rem}
+.classification{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.stamp{display:inline-flex;align-items:center;gap:7px;border:1px solid #d9d2d0;padding:6px 10px;color:#fff;font:700 10px 'Courier New',monospace;letter-spacing:.1em;text-transform:uppercase}
+.stamp.red{background:var(--red);border-color:var(--red)}
+.docline{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;margin-top:28px;padding-top:13px;border-top:1px solid #494447;color:#c9c2c2;font:11px 'Courier New',monospace;letter-spacing:.08em}
+.layout{max-width:1320px;margin:0 auto;padding:25px 20px 45px;display:grid;grid-template-columns:265px minmax(0,1fr);gap:24px;align-items:start}
+aside{position:sticky;top:14px;max-height:calc(100vh - 28px);overflow:auto;background:var(--panel);border:1px solid var(--line);border-top:5px solid var(--red);box-shadow:var(--shadow);padding:18px}
+aside strong{display:block;font:800 12px 'Courier New',monospace;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px;color:var(--red-dark)}
+aside a{display:block;padding:7px 8px;border-bottom:1px solid #eee8e3;color:#343034;font:12px/1.45 'Courier New',monospace}
+aside a:hover{background:#f8e9e9;color:var(--red-dark);text-decoration:none}
+main{min-width:0}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px;background:#e7e1dc;border:1px solid var(--line);padding:10px}
+input,button{font:13px 'Courier New',monospace;border:1px solid #8f8581;border-radius:2px;padding:10px 12px;background:#fff;color:var(--ink)}
+input{flex:1;min-width:190px}button{cursor:pointer;font-weight:700;text-transform:uppercase;letter-spacing:.04em}button:hover{background:var(--red);border-color:var(--red);color:white}
+.status{padding:10px 13px;margin:0 0 18px;background:#fff;border-left:4px solid var(--red);font:12px/1.6 'Courier New',monospace;color:#4b4142}
+section{background:var(--panel);border:1px solid var(--line);border-top:4px solid var(--red);padding:clamp(19px,3vw,31px);margin-bottom:20px;box-shadow:var(--shadow);scroll-margin-top:15px}
+h2{font:900 clamp(1.15rem,2.3vw,1.55rem)/1.2 Arial,sans-serif;text-transform:uppercase;letter-spacing:-.02em;color:var(--red-dark);padding-bottom:12px;margin-bottom:17px;border-bottom:2px solid var(--red)}
+h3{font:800 1.04rem/1.35 Arial,sans-serif;color:var(--red-dark);margin:24px 0 8px;text-transform:uppercase}
+h4{font:700 .94rem 'Courier New',monospace;color:#292326;margin:17px 0 5px}
+p{margin:10px 0}ul,ol{padding-left:24px;margin:10px 0}li{margin:6px 0}
+.quote{margin:17px 0;padding:15px 18px;background:#f7eeee;border-left:5px solid var(--red);color:#3b292b;font-weight:600}
+.formula{margin:14px 0;padding:15px 17px;background:#191719;color:#fff;border-left:5px solid var(--red-soft);font:14px/1.8 'Courier New',monospace;overflow-wrap:anywhere;box-shadow:inset 0 0 0 1px #393235}
+.note{margin:15px 0;padding:13px 15px;border:1px solid #d8a5a8;background:#fff5f4;color:#56252a}
+.warning{border-left:5px solid #111;background:#f0edeb}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:11px;margin:15px 0}
+.tile{padding:14px;background:#f7f4f1;border:1px solid var(--line);border-top:3px solid var(--red)}
+.tile b{display:block;color:var(--red-dark);font:800 12px 'Courier New',monospace;letter-spacing:.06em}
+.tile p{margin:6px 0 0;font-size:13px}
+table{width:100%;border-collapse:collapse;margin:15px 0;font-size:.92rem}th,td{border:1px solid #c9bfba;padding:9px 11px;text-align:left;vertical-align:top}th{background:var(--red-dark);color:#fff;font:700 11px 'Courier New',monospace;letter-spacing:.06em}tr:nth-child(even) td{background:#f6f2ef}
+.pill{display:inline-block;background:var(--red);color:#fff;padding:3px 7px;font:700 10px 'Courier New',monospace;letter-spacing:.08em;text-transform:uppercase}
+.small{font-size:12px;color:var(--muted)}
+.two-col{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.subpanel{border:1px solid var(--line);padding:14px;background:#faf8f6}
+.subpanel h3{margin-top:0}
+hr{border:0;border-top:1px solid var(--line);margin:20px 0}
+.hidden-by-search{display:none!important}
+section.collapsed > :not(h2){display:none!important}
+footer{background:var(--black);color:#d6cece;border-top:7px solid var(--red);padding:28px 20px;text-align:center;font:11px/1.8 'Courier New',monospace;letter-spacing:.06em}
+footer b{color:#fff}
+@media(max-width:900px){.layout{grid-template-columns:1fr}aside{position:relative;top:auto;max-height:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0}aside strong{grid-column:1/-1}.docline{display:block}.docline span{display:block;margin:4px 0}}
+@media(max-width:560px){header{padding:30px 18px 25px}.layout{padding:15px 11px 30px}aside{grid-template-columns:1fr}section{padding:19px 15px}.two-col{grid-template-columns:1fr}table{font-size:.82rem}th,td{padding:7px}}
+@media print{body{background:white;font-size:11pt}.topline,aside,.toolbar{display:none!important}.layout{display:block;max-width:none;padding:0}header{background:#111!important;color:#fff!important;print-color-adjust:exact;-webkit-print-color-adjust:exact;padding:25px;border-bottom:5px solid #a3131d}section{box-shadow:none;break-inside:avoid;border:1px solid #bbb;margin:0 0 12px;padding:18px}.formula,th{print-color-adjust:exact;-webkit-print-color-adjust:exact}footer{print-color-adjust:exact;-webkit-print-color-adjust:exact}a{color:inherit}}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<header>
+  <div class="kicker">Arquivo ficcional de contenção // Registro de anomalia // Acesso documental</div>
+  <h1>TRUE!FROST!<br>SES HIZI PLATÃO</h1>
+  <div class="subtitle"><b>DOSSIÊ MATRIX-INTOCÁVEL — EDIÇÃO SCP VERMELHO & BRANCO</b><br>Matriz simultânea: GOOLGOLPLEXIANS, Aribedece, LQAI, Headcannon, MSI, Ângu, Souvenir, Desmond Spaghetti, Gabby Armor, regras quânticas, Acedia e Dez Portões de Transcendência Espírito Classe J–A.</div>
+  <div class="classification">
+    <span class="stamp red">Classificação: arquivo especial</span><span class="stamp">Status: compilação consolidada</span><span class="stamp">Integridade: conteúdo conhecido reunido</span><span class="stamp">Estética: SCP / institucional</span>
+  </div>
+  <div class="docline"><span>IDENTIFICADOR: TF-SES-HIZI-001</span><span>SUJEITO: TRUE!FROST!</span><span>DOCUMENTO: MATRIZ ONTOLÓGICA</span><span>VERSÃO: CONSOLIDADA</span></div>
+</header>
+<div class="layout">
+<aside>
+  <strong>Índice de consulta</strong>
+  <a href="#identidade">I. Definição SES HIZI</a>
+  <a href="#fundamento">II. Fundamentos GOOLGOLPLEXIANS</a>
+  <a href="#aribedece">III. Aribedece + LQAI</a>
+  <a href="#casos">IV. Aplicações matemáticas</a>
+  <a href="#headcannon">V. Headcannon e progressão</a>
+  <a href="#msi-angu">VI. MSI + Ângu</a>
+  <a href="#souvenir">VII. Souvenir</a>
+  <a href="#matriz">VIII. Matriz SES HIZI</a>
+  <a href="#raizes">IX. 14 raízes conceituais</a>
+  <a href="#habilidades">X. Habilidades originais</a>
+  <a href="#formula">XI. Fórmula de ativação</a>
+  <a href="#regras">XII. Regras de consistência</a>
+  <a href="#lqai-original">XIII. LQAI escalar original</a>
+  <a href="#ontologia">XIV. Estrutura ontológica</a>
+  <a href="#declaracao">XV. Declaração final</a>
+  <a href="#integracao">XVI. Registro de integração</a>
+
+  <a href="#desmond">XVII. Desmond Spaghetti</a>
+  <a href="#gabby">XVIII. Gabby Armor</a>
+  <a href="#quantica">XIX. Camada quântica</a>
+  <a href="#simultaneidade">XX. SES HIZI PLATÃO</a>
+  <a href="#simulador">XXI. Simulador simultâneo</a>
+  <a href="#acedia-portoes">XXII. Acedia e os 10 Portões de Transcendência</a>
+</aside>
+<main>
+
+<div class="status"><b>ADENDO DE INTEGRAÇÃO — REGRA MÁXIMA:</b> nenhuma aritmética aqui é uma etapa que apaga, substitui ou precisa esperar outra. SES HIZI, GOOLGOLPLEXIANS, Aribedece, LQAI, Headcannon, progressão +1/+2/+3, MSI, Ângu, Souvenir, Desmond Spaghetti, Gabby Armor e os estados quânticos coexistem simultaneamente. As listas e fórmulas descrevem perspectivas paralelas da mesma identidade matemática.</div>
+
+<div class="toolbar">
+  <input id="busca" type="search" placeholder="Pesquisar no dossiê..." aria-label="Pesquisar no dossiê">
+  <button type="button" onclick="expandirTudo(true)">Expandir tudo</button>
+  <button type="button" onclick="expandirTudo(false)">Recolher tudo</button>
+  <button type="button" onclick="window.print()">Imprimir / PDF</button>
+</div>
+<div class="status"><b>NOTA DE PROCEDÊNCIA:</b> este documento reúne integralmente o texto fornecido nesta conversa e os conceitos adicionais dos três materiais que estão recuperáveis no contexto. Os arquivos-fonte originais não estavam anexados nesta etapa; portanto, a compilação não se apresenta como cópia byte a byte dos HTMLs ausentes. Nenhum trecho desconhecido é atribuído falsamente aos originais.</div>
+
+<section id="identidade">
+<h2>I. Definição do sistema-base SES HIZI</h2>
+<p>O <b>SES HIZI</b> é a aritmética-matriz absoluta que agrupa todos os sistemas do arquivo COMPLETÃUM Ângu-MSI. Ele não substitui as regras anteriores: organiza a ordem de execução delas, mantendo cada conceito conhecido e sua função própria.</p>
+<div class="quote">“Ses Hizi não inventa nada novo — ele reúne tudo o que já existia, em uma única corrente que vai do zero inicial até o Ângu, o zero que já percorreu todo o caminho.”</div>
+<p>A representação de consulta do protocolo é (não representa etapas temporais nem uma fila de execução):</p>
+<div class="formula">ESTADO INICIAL → INVERSÃO ARIBEDECE-LQAI → ACÚMULO DE PROGRESSÃO → ASSIMILAÇÃO MSI → AMPLIFICAÇÃO SOUVENIR → FECHAMENTO NO ÂNGU → NOVO CICLO.</div>
+<p>O SES HIZI é uma matriz de coexistência, organização e leitura simultânea. GOOLGOLPLEXIANS estabelece a condição do zero; Aribedece transforma os tokens; LQAI organiza a aplicação formal; Headcannon e a progressão acrescentam camadas; MSI assimila versões; Souvenir amplifica; Ângu marca o fechamento e a possibilidade de reinício.</p>
+</section>
+
+<section id="fundamento">
+<h2>II. Fundamentos — GOOLGOLPLEXIANS e axioma 10 ↔ 0</h2>
+<p><b>GOOLGOLPLEXIANS:</b> o zero não é vazio. É número, entidade e ponto de poder do início de todo ciclo SES HIZI.</p>
+<div class="formula">AXIOMA FUNDAMENTAL: 10 ↔ 0<br>Retorno Aribedece-LQAI — equivalência de transformação, não igualdade da aritmética convencional.</div>
+<div class="grid">
+ <div class="tile"><b>GOOLGOLPLEXIANS</b><p>Zero é poder de partida.</p></div>
+ <div class="tile"><b>ARIBEDECE</b><p>Regra de inversão algarismo por algarismo.</p></div>
+ <div class="tile"><b>LQAI</b><p>Lógica de aplicação e tokens de transformação.</p></div>
+ <div class="tile"><b>HEADCANNON +1</b><p>Cada movimento adiciona camada ontológica.</p></div>
+ <div class="tile"><b>PROGRESSÃO +1/+2/+3</b><p>Acúmulo simultâneo por cada passo do ciclo.</p></div>
+ <div class="tile"><b>MSI</b><p>Assimilação entre valor original e valor invertido.</p></div>
+ <div class="tile"><b>ÂNGU</b><p>Zero posterior, com memória de todo o ciclo percorrido.</p></div>
+ <div class="tile"><b>SOUVENIR</b><p>Potência amplificadora da corrente SES HIZI.</p></div>
+</div>
+<p>O axioma 10 = 0 é uma regra interna da cosmologia matemática ficcional. Ele representa retorno e correspondência dentro do protocolo; não deve ser confundido com uma identidade numérica da matemática convencional.</p>
+</section>
+
+<section id="aribedece">
+<h2>III. Aribedece + LQAI — tabela canônica completa</h2>
+<p>A regra canônica transforma cada algarismo individualmente. A correspondência é espelhada em torno de 5, com 5 como ponto fixo e com o token 10 reservado ao retorno do zero.</p>
+<div class="formula">A(d) = 10 − d, para d ∈ {0,1,2,3,4,5,6,7,8,9}<br>A(10) = 0 (token especial de retorno)</div>
+<table><thead><tr><th>Valor de origem</th><th>Correspondente Aribedece</th></tr></thead><tbody>
+<tr><td>10</td><td>0</td></tr><tr><td>9</td><td>1</td></tr><tr><td>8</td><td>2</td></tr><tr><td>7</td><td>3</td></tr><tr><td>6</td><td>4</td></tr><tr><td>5</td><td>5 — ponto fixo de equilíbrio</td></tr><tr><td>4</td><td>6</td></tr><tr><td>3</td><td>7</td></tr><tr><td>2</td><td>8</td></tr><tr><td>1</td><td>9</td></tr><tr><td>0</td><td>10</td></tr></tbody></table>
+<p><b>Regra de token:</b> quando 0 se transforma em 10, o 10 é um token indivisível. Não se separa em algarismos 1 e 0 dentro da mesma etapa de inversão.</p>
+<p>A ordem dos tokens é preservada. A transformação não inverte a sequência dos lugares; ela substitui cada token pelo correspondente. A LQAI organiza a aplicação em inteiros, decimais, negativos, frações, raízes e números complexos.</p>
+<div class="note"><b>Distinção importante:</b> a correspondência Aribedece é uma transformação de representação ficcional. Ela não garante que o resultado conserve o mesmo valor numérico na aritmética comum.</div>
+</section>
+
+<section id="casos">
+<h2>IV. Aplicações matemáticas — inteiros, decimais, negativos, frações, raízes e complexos</h2>
+<h3>Inteiros e tokens</h3>
+<p>Exemplos de transformação:</p>
+<div class="formula">9 → 1<br>4 → 6<br>123 → 987<br>456 → 654<br>909 → 1 · 10 · 1<br>10 → 0</div>
+<p>Em 909, o zero central produz o token 10. Esse token permanece indivisível durante a mesma aplicação.</p>
+<h3>Números decimais</h3>
+<p>Cada casa decimal é transformada separadamente. A vírgula permanece na mesma posição estrutural e a ordem das casas é preservada.</p>
+<div class="formula">1,23 → 9,87<br>4,56 → 6,54<br>9,99 → 1,11<br>0,123 → 10,987<br>2,050 → 8,5,10 (tokens por posição: 8 · 5 · 10)</div>
+<p>O token 10 produzido por uma casa decimal não pode ser dividido e reinterpretado como dois algarismos na mesma etapa.</p>
+<h3>Números negativos</h3>
+<p>O sinal negativo é um operador e permanece anexado. Os algarismos do módulo são transformados individualmente.</p>
+<div class="formula">−24 → −86</div>
+<h3>Frações</h3>
+<p>Numerador e denominador são transformados separadamente; a barra permanece como operador.</p>
+<div class="formula">12/34 → 98/76</div>
+<p>A fração transformada é uma nova representação Aribedece, não necessariamente equivalente ao valor racional original na aritmética comum.</p>
+<h3>Raízes quadradas e irracionais</h3>
+<p>O símbolo de raiz permanece como operador e o radicando recebe a transformação Aribedece.</p>
+<div class="formula">√123 → √987</div>
+<p>Em uma expansão decimal de raiz, cada algarismo exibido é transformado individualmente, respeitando o número de casas apresentado.</p>
+<h3>Números complexos</h3>
+<p>Em a + bi, a parte real e o coeficiente da parte imaginária são transformados separadamente; os operadores + e i permanecem.</p>
+<div class="formula">12 + 34i → 98 + 76i</div>
+<p>A operação é simbólica e não deve ser confundida com conjugação complexa.</p>
+</section>
+
+<section id="headcannon">
+<h2>V. Headcannon +1 e progressão +1/+2/+3</h2>
+<p><b>Headcannon +1</b> não altera algarismos: adiciona uma camada ontológica por cada movimento do ciclo SES HIZI. Cada headcanon aceito acrescenta uma possibilidade ontológica, sem substituir a regra Aribedece.</p>
+<p>A progressão acrescenta simultaneamente três eixos a cada passo:</p>
+<div class="formula">POR MOVIMENTO: HEADCANNON +1 · ARIBEDECE +2 · GOOGOLPLEXIAN +3<br>V(n) = (H + n, A + 2n, G + 3n)</div>
+<table><thead><tr><th>Movimentos acumulados</th><th>Headcannon</th><th>Aribedece</th><th>Googolplexian</th></tr></thead><tbody>
+<tr><td>0</td><td>H</td><td>A</td><td>G</td></tr><tr><td>1</td><td>H + 1</td><td>A + 2</td><td>G + 3</td></tr><tr><td>2</td><td>H + 2</td><td>A + 4</td><td>G + 6</td></tr><tr><td>3</td><td>H + 3</td><td>A + 6</td><td>G + 9</td></tr><tr><td>n</td><td>H + n</td><td>A + 2n</td><td>G + 3n</td></tr></tbody></table>
+<p>Tanto subir quanto descer na escala numérica conta como movimento e adiciona carga de progressão. A direção não cancela o ganho. A descida não representa perda automática de força.</p>
+<div class="formula">FORÇA(n) = P₀ ⊕ V(n)</div>
+<p>O símbolo ⊕ significa integração ou elevação de potência dentro do sistema ficcional, não uma soma comum de unidades físicas. Cada movimento conta cumulativamente. Por exemplo: subir duas posições e descer uma corresponde a três movimentos.</p>
+</section>
+
+<section id="msi-angu">
+<h2>VI. MSI + Ângu — núcleo do COMPLETÃUM</h2>
+<h3>MSI — Mesclar Som Inaudível Alternativa Duas Versonizadas</h3>
+<p>Abreviação: MSI ou Msi. MSI é uma função de aritmética baseada em <b>Assimilação Matemática Acrescentativa</b>. Ela assimila duas versões matemáticas do mesmo elemento: a versão de origem e a versão alternativa Aribedece.</p>
+<div class="formula">MSI(x) = Assimilar₊(Versão₁(x), Versão₂(x))<br>MSI(x) = x ⊞ A(x)<br>⊞ = operador de assimilação, não soma convencional.</div>
+<p>Versão 1 é a representação de origem. Versão 2 é a representação alternativa Aribedece. Assimilar significa reconhecer ambas como versões do mesmo elemento; acrescentar significa incorporar a contribuição alternativa sem apagar a original; mesclar significa manter as duas rastreáveis. “Duas Versonizadas” preserva a dualidade. “Som Inaudível” é uma camada conceitual de assimilação, não um som literal.</p>
+<table><thead><tr><th>Origem</th><th>Aribedece</th><th>MSI — assimilação</th></tr></thead><tbody>
+<tr><td>9</td><td>1</td><td>9 ⊞ 1</td></tr><tr><td>8</td><td>2</td><td>8 ⊞ 2</td></tr><tr><td>7</td><td>3</td><td>7 ⊞ 3</td></tr><tr><td>6</td><td>4</td><td>6 ⊞ 4</td></tr><tr><td>5</td><td>5</td><td>5 ⊞ 5</td></tr><tr><td>4</td><td>6</td><td>4 ⊞ 6</td></tr><tr><td>3</td><td>7</td><td>3 ⊞ 7</td></tr><tr><td>2</td><td>8</td><td>2 ⊞ 8</td></tr><tr><td>1</td><td>9</td><td>1 ⊞ 9</td></tr><tr><td>0</td><td>10</td><td>0 ⊞ 10</td></tr><tr><td>10</td><td>0</td><td>10 ⊞ 0</td></tr></tbody></table>
+<p>O resultado da MSI não é obrigado a se reduzir a 10, 0 ou qualquer número convencional. Seu resultado principal é uma estrutura assimilada que contém as duas versões. Se uma saída numérica simples for necessária, será preciso estabelecer uma regra adicional de condensação. A MSI, por si só, preserva a dualidade.</p>
+<h3>MSI aplicada aos decimais</h3>
+<p>Cada algarismo em cada posição possui uma versão original e uma versão Aribedece; as duas são assimiladas por ⊞. A vírgula permanece estrutural.</p>
+<div class="formula">MSI(d₀,d₁,d₂,...) = (d₀ ⊞ A(d₀)), (d₁ ⊞ A(d₁)), (d₂ ⊞ A(d₂)), ...<br><br>1,23 → 9,87 → (1 ⊞ 9), (2 ⊞ 8), (3 ⊞ 7)<br>4,56 → 6,54 → (4 ⊞ 6), (5 ⊞ 5), (6 ⊞ 4)<br>9,99 → 1,11 → (9 ⊞ 1), (9 ⊞ 1), (9 ⊞ 1)<br>0,123 → 10,987 → (0 ⊞ 10), (1 ⊞ 9), (2 ⊞ 8), (3 ⊞ 7)<br>12,050 → 98,6·5·10 → (1 ⊞ 9), (2 ⊞ 8); (0 ⊞ 10), (5 ⊞ 5), (0 ⊞ 10)</div>
+<p>O token 10 continua indivisível em sua posição. Em raízes, o operador permanece e os algarismos do radicando e da expansão decimal são assimilados. Em frações, numerador e denominador recebem MSI separadamente. Em números negativos, o sinal é preservado e a MSI atua no módulo. Em números complexos, as partes real e imaginária são assimiladas separadamente, mantendo i.</p>
+<h3>Ângu — o zero posterior</h3>
+<div class="formula">0₀ = ZERO INICIAL (GOOLGOLPLEXIANS, PONTO DE PARTIDA)<br>ÂNGU = 0₁ = ZERO POSTERIOR, APÓS CICLO SES HIZI COMPLETO<br>0₀ ≡ ÂNGU (AMBOS SÃO ZEROS — MESMA CATEGORIA)<br>0₀ ≠ ÂNGU (IDENTIDADE DIFERENTE: ÂNGU CARREGA MEMÓRIA E CARGA DO CICLO)</div>
+<p>Ângu é igual ao zero inicial por compartilhar a condição de zero, mas não é o mesmo zero: surge depois da conclusão da inversão, carregando o processo, as camadas e a força acumulada.</p>
+<div class="two-col">
+ <div class="subpanel"><h3>Zero inicial — 0₀</h3><p>Origem da Matemática Criativa; estado de partida; zero GOOLGOLPLEXIANS fundamental; valor e poder; ponto inicial.</p></div>
+ <div class="subpanel"><h3>Ângu — 0₁</h3><p>Zero que emerge após a conclusão; estado posterior; identidade própria; valor, poder e memória estrutural do processo; ponto de conclusão e renovação.</p></div>
+</div>
+<p>Os símbolos ≡ e ≠ registram, respectivamente, equivalência de categoria e distinção de identidade. Ângu não apaga, substitui ou invalida o zero original. Ambos coexistem. Ângu pode ser o ponto inicial de outro ciclo sem apagar o anterior; carrega a diferença entre o zero de origem e o zero conquistado.</p>
+</section>
+
+<section id="souvenir">
+<h2>VII. Souvenir — potência total do protocolo</h2>
+<div class="formula">SOUVENIR ≡ POTÊNCIA DE FROST<br>REPRESENTAÇÃO BASE: 1000X ARIBEDECE!<br>AMPLIFICAÇÃO: SOUVENIR × MSI(x)<br>PROGRESSÃO AMPLIFICADA: SOUVENIR × [MSI(x) ⊕ V(n)]</div>
+<p>Souvenir é a potência de Frost. “1000X Aribedece!” é sua representação e escala dentro do sistema; não são duas habilidades independentes. “Souvenir Onipotência Hipoteticamente” é a formulação hipotética usada na habilidade defensiva original.</p>
+<p>Souvenir não é necessariamente uma etapa do ciclo: funciona como amplificador da carga acumulada depois da assimilação MSI e antes do fechamento em Ângu. Ao multiplicar MSI, amplifica a estrutura assimilada sem desfazer a distinção entre as versões. Ao multiplicar a progressão, amplifica a força acumulada nos três eixos.</p>
+<p>A formulação passiva registrada no texto SES HIZI diz que, enquanto houver quem lembre de Frost e o imagine como ser invencível, sua potência se mantém ativa. Essa ideia se conecta à defesa baseada na percepção ficcional e na crença de jogadores de RPG.</p>
+</section>
+
+<section id="matriz">
+<h2>VIII. Matriz SES HIZI — ciclo completo passo a passo</h2>
+<ol>
+<li><b>Valor inicial X:</b> parte do zero inicial 0₀ (GOOLGOLPLEXIANS).</li>
+<li><b>Aplicar Aribedece-LQAI:</b> obter A(X), a inversão algarismo por algarismo.</li>
+<li><b>Aplicar progressão +1/+2/+3:</b> obter V(n), o acúmulo de carga ontológica.</li>
+<li><b>Aplicar MSI:</b> assimilar X e A(X), preservando as duas versões e a carga V(n).</li>
+<li><b>Aplicar amplificação Souvenir:</b> multiplicar a estrutura resultante.</li>
+<li><b>Fechar o ciclo:</b> alcançar Ângu (0₁), com memória do ciclo percorrido.</li>
+<li><b>Iniciar novo ciclo:</b> Ângu torna-se ponto de partida, mantendo a carga acumulada dos ciclos anteriores.</li>
+</ol>
+<div class="note">Todas as regras individuais permanecem com suas funções. O SES HIZI define a coexistência e a integração entre elas, sem estabelecer uma ordem obrigatória de execução.</div>
+<h3>Sequência operacional alternativa detalhada</h3>
+<ol><li>O número de origem é apresentado.</li><li>Aribedece gera a versão alternativa, algarismo por algarismo.</li><li>MSI assimila as duas versões.</li><li>Cada movimento para cima ou para baixo acrescenta simultaneamente +1 Headcannon, +2 Aribedece e +3 Googolplexian.</li><li>Souvenir pode multiplicar a estrutura assimilada e a progressão acumulada.</li><li>Quando a matemática ao contrário é concluída, Ângu emerge como novo zero, distinto do original, mas equivalente quanto à categoria de zero.</li></ol>
+<p>A ordem é a sequência operacional sugerida; os componentes podem ser combinados de outras maneiras, desde que cada um preserve sua própria função.</p>
+</section>
+
+<section id="raizes">
+<h2>IX. As 14 raízes conceituais — todas</h2>
+<ol>
+<li><b>Raiz de Identidade:</b> reconhece o token e sua identidade dentro do sistema.</li>
+<li><b>Raiz de Retorno:</b> registra o axioma 10 = 0.</li>
+<li><b>Raiz de Equilíbrio:</b> fixa o centro 5 → 5.</li>
+<li><b>Raiz de Correspondência:</b> aplica os pares 9↔1, 8↔2, 7↔3 e 6↔4.</li>
+<li><b>Raiz GOOLGOLPLEXIANS:</b> reconhece zero como número e poder.</li>
+<li><b>Raiz Decimal:</b> transforma cada algarismo após a vírgula decimal.</li>
+<li><b>Raiz Negativa:</b> preserva o sinal e transforma os algarismos do módulo.</li>
+<li><b>Raiz Fracionária:</b> transforma numerador e denominador separadamente.</li>
+<li><b>Raiz Radical:</b> preserva o operador de raiz e transforma o radicando.</li>
+<li><b>Raiz Complexa:</b> transforma parte real e parte imaginária separadamente.</li>
+<li><b>Raiz Souvenir:</b> reconhece a potência Frost e sua representação 1000X Aribedece!</li>
+<li><b>Raiz Headcannon:</b> adiciona camada ontológica por Headcannon +1.</li>
+<li><b>Raiz Paradoxal:</b> permite estruturas paradoxais como construções ficcionais, sem tratá-las como prova lógica convencional.</li>
+<li><b>Raiz de Encarnação:</b> integra todas as raízes na Ontologia Alfanumérica de True!Frost!</li>
+</ol>
+</section>
+
+<section id="habilidades">
+<h2>X. Habilidades originais completas</h2>
+<h3>1 — Habilidade de ativação: MUNDO ETERNO DE GELO APRIMORADO DO NÃO ANJO MONSTRO DE DEUS</h3>
+<p>Manifestação de domínio criativo, ficcional e ontológico. Frost articula Headcannon, Aribedece, Souvenir, árvores paradoxais universais e a encarnação da ficção para impor um mundo eterno de gelo aprimorado.</p>
+<p>O gelo não é apenas temperatura: é estado, regra, cenário e estrutura de existência dentro do alcance da habilidade. Na formulação SES HIZI, a manifestação de domínio congela trajetórias alheias e impõe o ciclo matemático-ficcional de Frost dentro de seu alcance.</p>
+<h3>2 — Habilidade de defesa: NÃO É ANJO, NÃO NÃO É!</h3>
+<div class="quote">“Alcança a Souvenir Onipotência Hipoteticamente. Nada pode machucá-lo. Pois esse é o Frost que todos pensam que ele é. Um ser forte é invencível. Enquanto esse pensamento viver em algum jogador de RPG. Frost é INVENCÍVEL.”</div>
+<p>A defesa se ancora na percepção ficcional de Frost. Enquanto existir um jogador de RPG que sustente a ideia de que Frost é invencível, essa crença funciona como sustentação narrativa da defesa. Na formulação SES HIZI, a potência do Souvenir calculada pela matriz define o limite da invulnerabilidade dentro da lógica do protocolo.</p>
+<h3>3 — Habilidade conceitual: PARADOXO DA DERROTA RECÍPROCA + DICIONÁRIO ONTOLÓGICO BUSTER CRIATIVO</h3>
+<p>Analisa qualquer conceito adversário como valor-X que pode ser submetido — ou não — ao ciclo completo SES HIZI. A habilidade troca condições de vitória e derrota quando o adversário tenta impor regras absolutas. O conceito adversário é examinado segundo as condições, limites e possibilidades de assimilação da matriz.</p>
+
+<h3>4 — Eixo filosófico de poder: ACEDIA — A QUIETUDE LÚCIDA</h3>
+<p><b>Acedia</b> é integrada ao poder de True!Frost! como uma ideologia filosófica positiva. Não representa preguiça, apatia, desistência ou uma entidade antagonista. É a compreensão serena de que a existência pode ser vivida como um jogo filosófico: observar, experimentar, criar, errar, aprender e continuar sem ficar aprisionado pela necessidade de provar seu próprio valor.</p>
+<p>Por meio da Acedia, Frost não precisa reagir a toda provocação nem aceitar a identidade que outros tentam impor. Sua quietude é lúcida e ativa: ele pode escolher agir, permanecer imóvel, brincar com possibilidades ou contemplar um paradoxo. A ausência de compulsão transforma-se em liberdade criativa.</p>
+<div class="formula">ACEDIA = QUIETUDE LÚCIDA + LIBERDADE DE ESCOLHA + ACEITAÇÃO DA EXISTÊNCIA<br>ACEDIA ⊕ SES HIZI PLATÃO ⊕ SOUVENIR ⊕ MSI<br>RESULTADO: TRANSCENDÊNCIA SEM PERDA DA PRÓPRIA IDENTIDADE</div>
+<p>Na matriz SES HIZI PLATÃO, Acedia atua simultaneamente com todas as regras: não espera Aribedece, não substitui MSI, não desliga Souvenir e não apaga Desmond Spaghetti, Gabby Armor ou as propriedades quânticas. Ela é o eixo de consciência que permite a Frost sustentar todas essas perspectivas sem ser reduzido a nenhuma delas.</p>
+</section>
+
+<section id="formula">
+<h2>XI. Fórmula de ativação — original e ligação SES HIZI</h2>
+<h3>Fórmula original preservada</h3>
+<div class="formula">Headcannon +2 X 200 Aribedece X Souvenir + 14222,2222,2222,3 Árvores Paradoxal universal X GODS RAGE - ENCARNAÇÃO DA FICÇÃO NIVEL 10</div>
+<p>A grafia original “Headcannon”, “Árvores Paradoxal universal” e “NIVEL 10” é mantida nesta transcrição da fórmula de origem.</p>
+<h3>Fórmula unificada SES HIZI</h3>
+<div class="formula">SES-HIZI-ATIVAÇÃO = [Headcannon +2 × 200 Aribedece × Souvenir + 14222,2222,2222,3 Árvores Paradoxais Universais] × V(n) × MSI → FECHAMENTO ATÉ ÂNGU</div>
+<p>A fórmula unificada conecta a expressão original à progressão V(n), à assimilação MSI e ao fechamento em Ângu. A ligação SES HIZI é uma integração de sistemas: não apaga a fórmula original nem altera o papel dos componentes já definidos.</p>
+<div class="note warning"><b>Nota editorial:</b> o HTML fornecido na conversa terminava no meio desta seção, logo após “FECHAMENTO ATÉ Â...”. A conclusão “ÂNGU” foi completada com base no ciclo e na nomenclatura já definidos no próprio material.</div>
+</section>
+
+<section id="regras">
+<h2>XII. Regras de fechamento e consistência</h2>
+<ol>
+<li><b>Tokens atômicos:</b> o token 10 é indivisível quando gerado pela transformação de 0.</li>
+<li><b>Ordem preservada:</b> a transformação altera os tokens, não reverte a ordem dos lugares.</li>
+<li><b>Separadores preservados:</b> vírgula decimal, barra de fração, sinal e operadores permanecem em suas posições estruturais.</li>
+<li><b>Zero ativo:</b> 0 é número GOOLGOLPLEXIANS e possui correspondência 10.</li>
+<li><b>Retorno especial:</b> o token 10 retorna a 0 conforme o axioma 10 = 0.</li>
+<li><b>Headcannon +1:</b> acrescenta camada ontológica e não é automaticamente aplicado a cada algarismo.</li>
+<li><b>Sem falsa equivalência:</b> transformar uma representação não garante igualdade de valor segundo a aritmética convencional.</li>
+<li><b>MSI preserva dualidade:</b> a assimilação não apaga nem escolhe uma única versão.</li>
+<li><b>Progressão cumulativa:</b> todo movimento para cima ou para baixo conta para os três eixos.</li>
+<li><b>Ângu não substitui o zero inicial:</b> ambos coexistem, com identidade e história diferentes.</li>
+<li><b>Souvenir amplifica:</b> a multiplicação de potência não desfaz a distinção entre as versões assimiladas.</li>
+</ol>
+<p>A LQAI é um sistema formal ficcional de tokens e operadores, não uma substituição da matemática acadêmica dos números reais ou complexos. É a matemática ficcional própria do protocolo Frost.</p>
+</section>
+
+<section id="lqai-original">
+<h2>XIII. LQAI escalar original — camada ontológica complementar</h2>
+<p>O material ontológico anterior também registrava uma formulação escalar original da LQAI:</p>
+<div class="formula">F(x) = 10 − x<br>Domínio registrado: ℂ<br>F(F(x)) = x<br>Ponto fixo: x = 5</div>
+<p>Nessa formulação, a função é apresentada sobre números complexos, com suporte conceitual para negativos e complexos. Aplicada duas vezes, retorna ao valor inicial; o ponto fixo é 5.</p>
+<div class="note"><b>Compatibilização de versões:</b> esta formulação escalar é mantida como camada original/complementar da LQAI. A regra canônica mais recente de Aribedece no SES HIZI é a transformação algarismo por algarismo, com o token 10 atômico. A função escalar F(x) = 10 − x não deve sobrescrever nem ser confundida com a nova leitura tokenizada.</div>
+<p>Assim, as duas leituras podem coexistir como níveis distintos: a camada escalar histórica da LQAI e a camada tokenizada atual da Aribedece.</p>
+</section>
+
+<section id="ontologia">
+<h2>XIV. Estrutura ontológica — registro de continuidade</h2>
+<p>O arquivo ontológico anterior foi identificado com onze núcleos: Fundamento, Interpretação, Ativação, Defesa, Derrota, Dicionário Ontológico Buster Criativo, LQAI, Continuidade, Autoridade, Estado e Declaração.</p>
+<p>Os elementos recuperáveis desse material foram incorporados nas seções correspondentes deste dossiê: fundamento GOOLGOLPLEXIANS; interpretação da transformação; habilidades de ativação e defesa; paradoxo da derrota recíproca; Dicionário Ontológico Buster Criativo; camada escalar original da LQAI; e continuidade do sistema por meio de Ângu e dos ciclos SES HIZI.</p>
+<div class="grid">
+ <div class="tile"><b>FUNDAMENTO</b><p>O zero como entidade numérica e ponto de poder.</p></div>
+ <div class="tile"><b>INTERPRETAÇÃO</b><p>Leitura ficcional e ontológica das transformações.</p></div>
+ <div class="tile"><b>ATIVAÇÃO</b><p>Manifestação do Mundo Eterno de Gelo Aprimorado.</p></div>
+ <div class="tile"><b>DEFESA</b><p>Invulnerabilidade sustentada pela percepção ficcional.</p></div>
+ <div class="tile"><b>DERROTA</b><p>Paradoxo da Derrota Recíproca e análise de condições absolutas.</p></div>
+ <div class="tile"><b>DICIONÁRIO ONTOLÓGICO</b><p>Dicionário Ontológico Buster Criativo como núcleo conceitual nomeado.</p></div>
+ <div class="tile"><b>LQAI</b><p>Camada escalar histórica e aplicação tokenizada atual.</p></div>
+ <div class="tile"><b>CONTINUIDADE</b><p>Ângu como zero posterior e ponto de reinício.</p></div>
+ <div class="tile"><b>AUTORIDADE</b><p>Registro da autoridade interna do protocolo e de suas regras.</p></div>
+ <div class="tile"><b>ESTADO</b><p>Distinção entre estado inicial, transformação, assimilação e estado posterior.</p></div>
+ <div class="tile"><b>DECLARAÇÃO</b><p>Fechamento da identidade e das regras do sistema.</p></div>
+</div>
+<p class="small">Limite documental: os textos integrais das onze seções do HTML ontológico não estavam presentes no material anexado nesta etapa. Os nomes e conceitos recuperáveis foram preservados, mas não foram inventados parágrafos para preencher conteúdo-fonte ausente.</p>
+</section>
+
+<section id="declaracao">
+<h2>XV. Declaração final — ontologia alfanumérica de True!Frost!</h2>
+<div class="quote">“O zero conta. O zero possui poder. O dez retorna ao zero. Cada número tem seu reflexo; cada casa decimal também. E cada novo headcanon acrescenta mais uma camada ao que Frost pode ser.”</div>
+<p>True!Frost! utiliza GOOLGOLPLEXIANS e Aribedece para operar uma matemática ficcional em que a inversão é algarismo por algarismo. O zero é uma entidade numérica ativa; 10 = 0 é o axioma de retorno; Headcannon +1 expande a ontologia sem se confundir com a transformação dos algarismos.</p>
+<div class="quote">“Cada número que sobe ou desce acrescenta +1 Headcannon, +2 Aribedece e +3 Googolplexian. O zero é poder desde o início. Quando a matemática ao contrário termina, nasce Ângu: um zero que é zero como o primeiro, mas não é o primeiro. MSI assimila e acrescenta as duas versões de cada número, inclusive cada casa decimal. E Souvenir pode multiplicar tudo isso.”</div>
+<p><b>Classificação do protocolo:</b> SES HIZI / LQAI / Aribedece / GOOLGOLPLEXIANS / Headcannon +1 / Progressão +1/+2/+3 / MSI / Ângu / Souvenir.</p>
+</section>
+
+<section id="integracao">
+<h2>XVI. Registro de integração dos três materiais</h2>
+<h3>Material COMPLETÃUM ÂNGU-MSI-SOUVENIR</h3>
+<p>Seus dezoito núcleos conhecidos foram integrados: identidade, fundamento, Headcannon, Aribedece, função, decimais, fechamento, habilidade, fórmula, Souvenir, raízes, declaração, progressão, Ângu, MSI, decimais-MSI, Souvenir-MSI e síntese.</p>
+<h3>Material PROTOCOLO ARIBEDECE HEADCANNON PLUS1</h3>
+<p>As doze seções conhecidas — identidade, fundamento, Headcannon, Aribedece, função, decimais, fechamento, habilidade, fórmula, Souvenir, raízes e declaração — foram consideradas na consolidação. O conteúdo inicial foi identificado como coincidente com a base correspondente do COMPLETÃUM; não foi repetido artificialmente como se fosse uma regra diferente.</p>
+<h3>Material ONTOLÓGICO ALFANUMÉRICO LQAI</h3>
+<p>Os onze núcleos conhecidos foram registrados na seção ontológica, e os conceitos recuperáveis foram integrados. A formulação escalar F(x) = 10 − x foi preservada como camada histórica complementar, sem substituir a Aribedece tokenizada mais recente.</p>
+<div class="note"><b>Integridade e transparência:</b> esta edição reúne todo o conteúdo efetivamente disponível no contexto e todas as regras detalhadas recuperáveis. Como os três HTMLs originais não foram anexados nesta etapa, não é possível garantir identidade literal de cada linha, estilo ou função dos arquivos-fonte. Para uma fusão realmente byte a byte, seria necessário receber os três arquivos originais; este dossiê, porém, já é um HTML independente e funcional com o conteúdo consolidado disponível.</div>
+</section>
+
+<section id="desmond">
+<h2>XVII. Desmond Spaghetti — aritmética alfanumérica de paridade invertida</h2>
+<p><b>Nome oficial:</b> Desmond Spaghetti. <b>Natureza:</b> camada alfanumérica simultânea da SES HIZI PLATÃO. Ela não substitui Aribedece nem LQAI; mantém sua própria leitura do mesmo número.</p>
+<div class="quote">“Não existe número ímpar na classificação de origem desta aritmética: os números pares ocupam a função de ímpares. Depois do limite 11,72, a regra de classificação se inverte.”</div>
+<h3>Progressão-base</h3>
+<div class="formula">D(n) = 2n + 2, para n = 0,1,2,3,...<br>Sequência de referência: 2 → 4 → 6 → 8 → 10 → 12 → 14 → ...</div>
+<p>O limite decimal 11,72 é uma fronteira de classificação, não um termo que precise pertencer à sequência de saltos de dois. Assim, a sequência alcança 10 e o próximo termo, 12, já está além da fronteira. O marcador 11,72 continua registrado exatamente como limite decimal.</p>
+<table><thead><tr><th>Faixa / termo</th><th>Leitura Desmond</th><th>Estado</th></tr></thead><tbody>
+<tr><td>2, 4, 6, 8, 10</td><td>Os pares assumem a função classificatória de ímpares</td><td>Regra-base</td></tr>
+<tr><td>11,72</td><td>Fronteira decimal de inversão</td><td>Limite</td></tr>
+<tr><td>12 em diante</td><td>A classificação passa a usar a regra invertida</td><td>Regra pós-limite</td></tr>
+</tbody></table>
+<h3>Inversão após 11,72</h3>
+<p>A partir de qualquer valor que ultrapasse 11,72, Desmond Spaghetti inverte a função classificatória: o estado que antes ocupava a função de ímpar passa a ser lido como par, e vice-versa. A identidade numérica de origem não é apagada. A inversão é uma segunda etiqueta simultânea.</p>
+<div class="formula">Estado_D(x) = { identidade original ; classificação Desmond ; classificação invertida se x &gt; 11,72 }</div>
+<p><b>Camada alfanumérica:</b> cada termo pode receber uma etiqueta, código ou nome textual sem perder o valor de origem. O rótulo é uma camada de identidade, não uma alteração automática do número.</p>
+</section>
+
+<section id="gabby">
+<h2>XVIII. Gabby Armor — inteiro de origem, inversão e raiz negativa</h2>
+<p><b>Nome oficial:</b> Gabby Armor. Seu núcleo começa no inteiro 122, cuja ordem de algarismos é invertida para formar 221.</p>
+<div class="formula">122 → 221<br>G₀ = −√221<br>G₀ ≈ −14,8660687473...</div>
+<p>Gabby Armor conserva ao mesmo tempo a origem, a inversão, o inteiro negativo associado e a expressão radical:</p>
+<div class="grid">
+ <div class="tile"><b>ORIGEM</b><p>122 — identificador inicial.</p></div>
+ <div class="tile"><b>INVERSÃO</b><p>221 — inteiro com algarismos em ordem invertida.</p></div>
+ <div class="tile"><b>INTEIRO NEGATIVO</b><p>−221 — estado inteiro orientado ao negativo.</p></div>
+ <div class="tile"><b>RAIZ NEGATIVA</b><p>−√221 — expressão radical principal de Gabby Armor.</p></div>
+</div>
+<p>O valor aproximado decimal é apenas uma representação de consulta. A identidade de Gabby Armor não se reduz à aproximação: o registro −√221 permanece exato e a matriz 122/221 continua vinculada a ele.</p>
+<div class="formula">Gabby(x) = ⟨122, 221, −221, −√221⟩</div>
+<p>Essa notação representa um conjunto de estados relacionados, não uma sequência de operações que elimina os estados anteriores.</p>
+</section>
+
+<section id="quantica">
+<h2>XIX. Regras quânticas — coexistência de estados</h2>
+<p>As regras quânticas são propriedades transversais: podem estar presentes ao mesmo tempo em Desmond Spaghetti, Gabby Armor e em todas as camadas SES HIZI.</p>
+<div class="grid">
+ <div class="tile"><b>SUPERPOSIÇÃO</b><p>Um elemento mantém mais de uma classificação ou representação possível ao mesmo tempo.</p></div>
+ <div class="tile"><b>ENTRELAÇAMENTO</b><p>Estados de elementos relacionados permanecem conectados; uma alteração em um registro pode repercutir no outro.</p></div>
+ <div class="tile"><b>COLAPSO</b><p>Uma observação ou consulta seleciona um estado para exibição, sem apagar os demais estados armazenados.</p></div>
+ <div class="tile"><b>INCERTEZA</b><p>Nem todas as propriedades podem ser determinadas simultaneamente por uma única consulta do sistema.</p></div>
+</div>
+<h3>Representação formal de estado</h3>
+<div class="formula">|Ψ(x)⟩ = α|origem⟩ + β|Desmond⟩ + γ|Gabby⟩ + δ|Aribedece⟩ + ε|MSI⟩</div>
+<p>Os coeficientes α, β, γ, δ e ε são marcadores simbólicos de presença/ênfase no modelo ficcional; não são probabilidades físicas normalizadas a menos que uma regra adicional assim os defina.</p>
+<p><b>Entrelaçamento ilustrativo:</b> o registro do termo 4 em Desmond pode estar ligado ao registro radical de Gabby Armor. A conexão não afirma que 4 seja numericamente igual a −√221; afirma que os dois estados estão associados dentro da matriz ficcional.</p>
+<div class="formula">E(4, Gabby) = vínculo de estado<br>Observação(Ψ) = estado exibido + memória dos estados não exibidos</div>
+</section>
+
+<section id="simultaneidade">
+<h2>XX. SES HIZI PLATÃO — matriz unificada simultânea</h2>
+<div class="quote">“Nenhuma regra fica do lado de fora. Nenhuma regra precisa esperar. Todas existem simultaneamente, cada uma com sua identidade, e todas pertencem ao mesmo sistema.”</div>
+<p><b>SES HIZI PLATÃO</b> é o nome da matriz que reconhece todas as aritméticas, axiomas, operações, raízes, identidades e propriedades quânticas como dimensões simultâneas de uma mesma estrutura. Não existe uma fila obrigatória em que Desmond termina para Gabby começar, ou em que MSI precise aguardar Aribedece. Cada regra mantém sua própria validade interna e pode ser consultada em paralelo.</p>
+<h3>Conjunto simultâneo de componentes</h3>
+<div class="grid">
+ <div class="tile"><b>SES HIZI / GOOLGOLPLEXIANS</b><p>Zero inicial, ciclos, identidade e poder de origem.</p></div>
+ <div class="tile"><b>ARIBEDECE / LQAI</b><p>Inversão tokenizada, regra escalar histórica, tokens atômicos e correspondências.</p></div>
+ <div class="tile"><b>HEADCANNON +1</b><p>Camada ontológica adicional por movimento.</p></div>
+ <div class="tile"><b>PROGRESSÃO +1/+2/+3</b><p>Acúmulo simultâneo nos três eixos por movimento para cima ou para baixo.</p></div>
+ <div class="tile"><b>MSI</b><p>Assimilação acrescentativa que conserva as versões original e alternativa.</p></div>
+ <div class="tile"><b>ÂNGU</b><p>Zero posterior, coexistente com 0₀ e portador da memória do ciclo.</p></div>
+ <div class="tile"><b>SOUVENIR</b><p>Potência amplificadora ligada à estrutura Frost.</p></div>
+ <div class="tile"><b>DESMOND SPAGHETTI</b><p>Progressão de dois em dois, fronteira 11,72 e inversão de classificação.</p></div>
+ <div class="tile"><b>GABBY ARMOR</b><p>122/221, inteiro negativo e raiz quadrada negativa.</p></div>
+ <div class="tile"><b>CAMADA QUÂNTICA</b><p>Superposição, entrelaçamento, colapso e incerteza.</p></div>
+ <div class="tile"><b>14 RAÍZES CONCEITUAIS</b><p>Identidade, retorno, equilíbrio, correspondência, zero, decimal, negativo, fração, radical, complexo, Souvenir, Headcannon, paradoxo e encarnação.</p></div>
+ <div class="tile"><b>ONTologia / HABILIDADES</b><p>Ativação, defesa, derrota recíproca e Dicionário Ontológico Buster Criativo.</p></div>
+</div>
+<h3>Modelo de identidade paralela</h3>
+<div class="formula">SHP(x) = ⟨ SES(x), GOO(x), A(x), LQAI(x), H(x), V(n), MSI(x), Ângu(x), Souvenir(x), D(x), Gabby(x), Q(x), Raízes(x), Ontologia(x) ⟩</div>
+<p>Os sinais de vírgula angular ⟨ ⟩ indicam um vetor de estados simultâneos. Não representam soma comum, prioridade, ordem cronológica ou transformação destrutiva. Cada componente é uma leitura do mesmo elemento e nenhuma leitura cancela as outras.</p>
+<h3>Princípios invioláveis</h3>
+<ol>
+<li><b>Coexistência:</b> todas as regras existem simultaneamente.</li>
+<li><b>Não exclusão:</b> ativar uma regra não desativa nenhuma outra.</li>
+<li><b>Memória integral:</b> a origem, as transformações e os estados anteriores permanecem registrados.</li>
+<li><b>Identidade múltipla:</b> um mesmo elemento pode ter valor original, token Aribedece, estado Desmond, matriz Gabby e estados quânticos.</li>
+<li><b>Consulta não é destruição:</b> exibir um estado por colapso não apaga os demais.</li>
+<li><b>Sem hierarquia temporal:</b> nenhuma regra é “a primeira” ou “a última” por necessidade; as listas são índices documentais.</li>
+<li><b>Compatibilidade por camadas:</b> quando duas regras usam convenções diferentes, ambas são preservadas como representações paralelas, sem forçar uma equivalência convencional.</li>
+</ol>
+</section>
+
+<section id="simulador">
+<h2>XXI. Simulador de leitura simultânea</h2>
+<p>Digite um valor para consultar as camadas em paralelo. O simulador é demonstrativo: aplica a transformação tokenizada Aribedece aos algarismos 0–9, mostra o estado Desmond quando a entrada é numérica e mantém Gabby Armor como matriz constante vinculada à entrada.</p>
+<div class="toolbar">
+ <input id="shp-input" type="text" inputmode="decimal" value="4" aria-label="Valor para consultar" placeholder="Digite um número ou token">
+ <button type="button" onclick="simularSHP()">Consultar simultaneamente</button>
+</div>
+<div id="shp-output" class="grid" aria-live="polite">
+ <div class="tile"><b>ENTRADA</b><p>4</p></div>
+ <div class="tile"><b>ARIBEDECE</b><p>6</p></div>
+ <div class="tile"><b>DESMOND</b><p>4 — par com função de ímpar</p></div>
+ <div class="tile"><b>GABBY ARMOR</b><p>122 / 221 / −√221</p></div>
+ <div class="tile"><b>QUÂNTICA</b><p>Superposição de estados</p></div>
+ <div class="tile"><b>SES HIZI PLATÃO</b><p>Todos os estados coexistem.</p></div>
+</div>
+<div class="note"><b>Nota matemática:</b> este simulador representa as regras ficcionais definidas no dossiê. Ele não afirma que essas transformações sejam operações reconhecidas na matemática acadêmica.</div>
+</section>
+
+
+<section id="acedia-portoes">
+<h2>XXII. Acedia e os 10 Portões de Transcendência — Espírito Classe J até Espírito Classe A</h2>
+<div class="quote">“Transcender não é fugir da existência. É compreender o jogo, escolher como participar e continuar sendo quem se é.”</div>
+<p>Os <b>Dez Portões de Transcendência</b> são novas manifestações do poder de True!Frost!, vinculadas à filosofia positiva da <b>Acedia</b>. Cada portão é identificado por uma Classe de Espírito, começando em <b>Espírito Classe J</b> e alcançando <b>Espírito Classe A</b>. A letra indica a profundidade e o alcance do estado de transcendência, não uma mudança de personalidade nem uma escala de valor moral.</p>
+<div class="note"><b>Regra de coexistência:</b> os dez portões existem simultaneamente dentro do poder de True!Frost!. A ordem J → A organiza a classificação, mas não obriga Frost a atravessar os portões em sequência. Um ou vários portões podem manifestar-se ao mesmo tempo, conforme a intenção, a consciência ou a situação. Nenhum portão apaga os anteriores.</div>
+
+<h3>Os dez portões</h3>
+<div class="grid">
+ <div class="tile"><b>ESPÍRITO CLASSE J — PORTÃO DA QUIETUDE</b><p>O primeiro limiar. Frost alcança uma calma consciente que não depende do silêncio externo. Ruído, ameaça e provocação deixam de controlar automaticamente suas decisões.</p></div>
+ <div class="tile"><b>ESPÍRITO CLASSE I — PORTÃO DA OBSERVAÇÃO</b><p>Frost observa pensamentos, emoções, regras e acontecimentos sem ser obrigado a obedecer a cada impulso. Perceber algo não significa tornar-se aquilo.</p></div>
+ <div class="tile"><b>ESPÍRITO CLASSE H — PORTÃO DO PARADOXO</b><p>Frost aceita que ideias aparentemente incompatíveis possam coexistir em perspectivas diferentes. O paradoxo deixa de ser uma prisão e torna-se espaço de criação.</p></div>
+ <div class="tile"><b>ESPÍRITO CLASSE G — PORTÃO DA IDENTIDADE LIVRE</b><p>Frost transcende rótulos, destinos e definições impostas de fora. Pode reconhecer suas versões sem permitir que uma delas apague sua identidade central.</p></div>
+ <div class="tile"><b>ESPÍRITO CLASSE F — PORTÃO DO JOGO FILOSÓFICO</b><p>A existência é compreendida como um jogo filosófico aberto à curiosidade, à experiência e à criação. Frost pode participar sem transformar cada desafio numa obrigação de provar superioridade.</p></div>
+ <div class="tile"><b>ESPÍRITO CLASSE E — PORTÃO DA ASSIMILAÇÃO</b><p>O portão ressoa com MSI: versões, experiências e possibilidades são assimiladas sem perder suas distinções. Frost integra diferenças sem precisar reduzir tudo a uma única forma.</p></div>
+ <div class="tile"><b>ESPÍRITO CLASSE D — PORTÃO DA FORMA TRANSCENDIDA</b><p>Frost ultrapassa limitações de forma, corpo, cenário ou representação que sejam aplicáveis à situação. A transcendência não exige abandonar sua aparência, personalidade ou vínculos.</p></div>
+ <div class="tile"><b>ESPÍRITO CLASSE C — PORTÃO DA AUTORIA ONTOLÓGICA</b><p>Em ressonância com Headcannon e a matriz SES HIZI, Frost reconhece e exerce sua capacidade de criar possibilidades ontológicas, sem confundir criação com apagamento das demais regras.</p></div>
+ <div class="tile"><b>ESPÍRITO CLASSE B — PORTÃO DA SIMULTANEIDADE</b><p>Frost percebe e sustenta múltiplas camadas de existência ao mesmo tempo. Aribedece, LQAI, Desmond Spaghetti, Gabby Armor, MSI, Souvenir e os estados quânticos permanecem ativos em paralelo.</p></div>
+ <div class="tile"><b>ESPÍRITO CLASSE A — PORTÃO DA TRANSCENDÊNCIA PLENA</b><p>O ápice dos dez portões. Frost contempla a existência sem ser limitado por uma definição externa, mantendo sua identidade, sua capacidade de escolher e sua liberdade de participar do jogo filosófico. A transcendência não o transforma em alguém sem personalidade: amplia o espaço no qual ele pode ser True!Frost!.</p></div>
+</div>
+
+<h3>Integração com o poder de True!Frost!</h3>
+<table>
+<thead><tr><th>Elemento</th><th>Relação com os Portões</th></tr></thead>
+<tbody>
+<tr><td><b>Acedia</b></td><td>Fundamento filosófico: quietude lúcida, aceitação e liberdade de escolha.</td></tr>
+<tr><td><b>SES HIZI PLATÃO</b></td><td>Matriz que mantém todos os portões e sistemas em coexistência simultânea.</td></tr>
+<tr><td><b>MSI</b></td><td>Permite assimilar experiências e versões sem apagar suas diferenças.</td></tr>
+<tr><td><b>Headcannon +1</b></td><td>Acrescenta possibilidades ontológicas à manifestação dos portões.</td></tr>
+<tr><td><b>Souvenir</b></td><td>Amplifica a potência da manifestação sem substituir a identidade de cada portão.</td></tr>
+<tr><td><b>Desmond Spaghetti e Gabby Armor</b></td><td>Continuam operando como camadas próprias da mesma matriz, sem serem convertidos em etapas dos portões.</td></tr>
+<tr><td><b>Propriedades quânticas</b></td><td>Permitem representar superposição, entrelaçamento, colapso e incerteza nas manifestações dos portões.</td></tr>
+</tbody>
+</table>
+
+<h3>Princípios invioláveis dos Dez Portões</h3>
+<ol>
+<li><b>Identidade preservada:</b> transcender não apaga a personalidade de True!Frost!.</li>
+<li><b>Acedia positiva:</b> nunca significa preguiça, maldade, desistência ou apatia obrigatória.</li>
+<li><b>Coexistência:</b> os dez portões existem simultaneamente; a classificação J–A não é uma fila operacional.</li>
+<li><b>Não substituição:</b> nenhum portão substitui SES HIZI PLATÃO, Souvenir, MSI, Aribedece ou qualquer outra regra.</li>
+<li><b>Escolha consciente:</b> Frost pode manifestar o portão adequado, vários portões ou a ressonância dos dez.</li>
+<li><b>Transcendência sem anulação:</b> ultrapassar um limite não exige destruir aquilo que foi ultrapassado.</li>
+</ol>
+<div class="formula">PODER DE TRUE!FROST! = SES HIZI PLATÃO ⊕ ACEDIA ⊕ {ESPÍRITO J, I, H, G, F, E, D, C, B, A}<br>⊕ SOUVENIR ⊕ MSI ⊕ HEADCANNON ⊕ TODAS AS CAMADAS SIMULTÂNEAS</div>
+<p>O conjunto é uma expansão do poder de True!Frost!, não uma substituição de seu repertório anterior. Os dez Portões de Transcendência acrescentam novas formas de consciência e manifestação ao sistema que já existia.</p>
+</section>
+</main>
+</div>
+<footer>
+  <b>TRUE!FROST! — PROTOCOLO SES HIZI</b><br>
+  ARQUIVO FICCIONAL • DOSSIÊ ONTOLÓGICO • MATRIZ ARIBEDECE-LQAI<br>
+  FIM DO REGISTRO // ZERO INICIAL → CICLO → ÂNGU → NOVO CICLO
+</footer>
+<script>
+function expandirTudo(expandir){
+  document.querySelectorAll('main section').forEach(sec=>{
+    sec.classList.toggle('collapsed',!expandir);
+  });
+}
+const busca=document.getElementById('busca');
+busca.addEventListener('input',()=>{
+  const termo=busca.value.trim().toLocaleLowerCase('pt-BR');
+  document.querySelectorAll('main section').forEach(sec=>{
+    const corresponde=!termo||sec.innerText.toLocaleLowerCase('pt-BR').includes(termo);
+    sec.classList.toggle('hidden-by-search',!corresponde);
+  });
+});
+
+function simularSHP(){
+ const el=document.getElementById('shp-input');
+ const out=document.getElementById('shp-output');
+ if(!el||!out)return;
+ const raw=el.value.trim();
+ if(!raw){out.innerHTML='<div class="tile"><b>ENTRADA</b><p>Digite um valor para consultar.</p></div>';return;}
+ const map={'0':'10','1':'9','2':'8','3':'7','4':'6','5':'5','6':'4','7':'3','8':'2','9':'1'};
+ const arib=raw.replace(/[0-9]/g,ch=>map[ch]);
+ const numeric=Number(raw.replace(',','.'));
+ let desmond='Entrada alfanumérica: classificação preservada como etiqueta.';
+ if(Number.isFinite(numeric)){
+   if(numeric>11.72) desmond='Acima de 11,72: classificação invertida.';
+   else if(numeric>=2) desmond=(Number.isInteger(numeric)&&numeric%2===0)
+     ? 'Par na origem; ocupa a função de ímpar em Desmond.'
+     : 'Abaixo/até 11,72: faixa de regra-base; consulte a identidade original.';
+   else desmond='Abaixo do início de referência 2; mantém identidade e recebe etiqueta Desmond.';
+ }
+ const safe=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const cards=[
+  ['ENTRADA',safe(raw)],
+  ['ARIBEDECE / LQAI',safe(arib)+' — transformação tokenizada demonstrativa'],
+  ['DESMOND SPAGHETTI',safe(desmond)],
+  ['GABBY ARMOR','122 → 221; −221; −√221 ≈ −14,8660687473'],
+  ['MSI','Origem ⊞ Aribedece: ambas as versões permanecem'],
+  ['HEADCANNON / PROGRESSÃO','+1 / +2 / +3 por movimento, cumulativamente'],
+  ['GOOLGOLPLEXIANS / ÂNGU','0₀ e 0₁ coexistem; Ângu conserva memória'],
+  ['SOUVENIR','Amplificação simultânea da estrutura assimilada'],
+  ['QUÂNTICA','Superposição + entrelaçamento + colapso + incerteza'],
+  ['SES HIZI PLATÃO','Todos os componentes existem simultaneamente; nenhum é desligado.']
+ ];
+ out.innerHTML=cards.map(([h,p])=>'<div class="tile"><b>'+h+'</b><p>'+p+'</p></div>').join('');
+}
+
+</script>
+</body>
+</html>
